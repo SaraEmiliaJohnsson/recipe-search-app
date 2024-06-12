@@ -7,7 +7,7 @@ body {
   justify-content: center;
   align-items: flex-start; /* Align items at the top */
   height: 100vh;
-  /* overflow-y: auto;  */
+  overflow-y: auto; 
 }
 
 .app {
@@ -32,7 +32,7 @@ body {
 
 .search-bar button {
   padding: 10px 20px;
-  margin-left: 10px;
+  margin: 10px;
   border: none;
   background-color: #28a745;
   color: white;
@@ -54,13 +54,35 @@ body {
   margin-bottom: 50px;
 }
 
+.recipe-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.recipe-navigation button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.recipe-navigation button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
 .recipe-card {
   background: white;
   border-radius: 10px;
   padding: 20px;
   margin: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 350px;
+  width: 80%;
   text-align: left;
   box-sizing: border-box; /* Ensure padding is included in width */
 }

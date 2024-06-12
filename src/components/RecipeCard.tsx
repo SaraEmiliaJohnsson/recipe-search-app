@@ -12,8 +12,9 @@ interface RecipeCardProps {
 const RecipeCard: React.FC<RecipeCardProps> = ({ recipe }) => {
     return (
         <section className="recipe-card">
-            <h2>{recipe.strMeal}</h2>
+
             <img src={recipe.strMealThumb} alt={recipe.strMeal} />
+            <h2>{recipe.strMeal}</h2>
             <p>{recipe.strInstructions}</p>
         </section>
     );
